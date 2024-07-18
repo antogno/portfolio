@@ -1,0 +1,15 @@
+html.dark {
+	color-scheme: dark;
+}
+
+html.light {
+	color-scheme: light;
+}
+
+html.dark #glow {
+	background: radial-gradient(
+		600px at var(--glow-x) var(--glow-y),
+		rgba(235, 98, 45, 0.15),
+		transparent 80%
+	);
+}

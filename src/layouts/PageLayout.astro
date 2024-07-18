@@ -1,0 +1,22 @@
+---
+import Navbar from '@components/Navbar.tsx';
+import Footer from '@components/Footer.tsx';
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+	title: string;
+	subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<BaseLayout title={title} subtitle={subtitle}>
+	<div id="glow" class="pointer-events-none fixed w-full h-full z-50"></div>
+	<Navbar client:load />
+	<main class="container mx-auto max-w-6xl p-10">
+		<slot />
+	</main>
+	<Footer client:load />
+	<script src="@scripts/glow.ts"></script>
+</BaseLayout>

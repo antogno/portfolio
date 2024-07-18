@@ -1,0 +1,56 @@
+---
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import '@fontsource-variable/archivo';
+import '@fontsource-variable/fira-code';
+import '@styles/global.css';
+import { SEO } from 'astro-seo';
+
+interface Props {
+	title: string;
+	subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<html lang="en" class="scroll-smooth box-border">
+	<head>
+		<SEO
+			title={title}
+			titleTemplate={`%s - ${subtitle}`}
+			description="I'm Antonio Granaldi, a dedicated full-stack web developer with a knack for crafting immersive digital experiences with precision and passion."
+			canonical="https://antogno.dev"
+			charset="utf-8"
+			openGraph={{
+				basic: {
+					title: 'Antonio Granaldi - Full-Stack Web Developer',
+					type: 'website',
+					image: 'https://antogno.dev/images/social-preview.png',
+					url: 'https://antogno.dev',
+				},
+				image: {
+					type: 'image/png',
+					width: 1200,
+					height: 630,
+					alt: 'My own name with my memoji next to it',
+				},
+			}}
+			twitter={{
+				card: 'summary',
+				site: '@agranaldi',
+				creator: '@agranaldi',
+				title: 'Antonio Granaldi - Full-Stack Web Developer',
+				image: 'https://antogno.dev/images/social-preview.png',
+				imageAlt: 'My own name with my memoji next to it',
+				description:
+					"I'm Antonio Granaldi, a dedicated full-stack web developer with a knack for crafting immersive digital experiences with precision and passion.",
+			}}
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<slot />
+		<script src="@scripts/themeInitializer.ts"></script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+---
+import { Link, Spacer } from '@nextui-org/react';
+
+interface Props {
+	title: string;
+	subtitle?: string;
+}
+
+const { title, subtitle } = Astro.props;
+
+const id = title.toLowerCase();
+---
+
+<section
+	{...{ id }}
+	class="scroll-mt-14 md:scroll-mt-12 mt-8 md:mt-10 lg:mt-12 py-5 transition-opacity ease-in duration-700"
+>
+	<div>
+		<Link color="primary" href={`#${id}`}>
+			<span
+				class="tracking-tight font-bold from-primary-400 to-primary-600 text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-b"
+			>
+				{title}
+			</span>
+		</Link>
+		{
+			subtitle && (
+				<p class="w-full md:w-1/2 my-2 md:my-4 text-base md:text-lg font-normal text-default-500">
+					{subtitle}
+				</p>
+			)
+		}
+	</div>
+	<Spacer y={10} />
+	<div>
+		<slot />
+	</div>
+</section>
