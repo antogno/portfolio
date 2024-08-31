@@ -2,6 +2,7 @@
 .astro/
 .env
 .env.production
+.netlify
 .vercel
 dist/
 node_modules/
