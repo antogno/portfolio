@@ -17,7 +17,7 @@ export default () => {
 	return (
 		<>
 			<Link
-				href="javascript:;"
+				role="button"
 				size="sm"
 				color="primary"
 				underline="always"

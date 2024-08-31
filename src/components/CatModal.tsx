@@ -20,7 +20,7 @@ export default (props: Props) => {
 	return (
 		<>
 			<Link
-				href="javascript:;"
+				role="button"
 				className="capitalize"
 				size="sm"
 				color="foreground"
