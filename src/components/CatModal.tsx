@@ -31,7 +31,7 @@ export default (props: Props) => {
 			</Link>
 			<Modal size="md" isOpen={isOpen} onClose={onClose}>
 				<ModalContent>
-					{(onClose) => (
+					{() => (
 						<>
 							<ModalHeader className="flex flex-col gap-1 capitalize">
 								{props.cat} {emoji.emojify(':heart:')}

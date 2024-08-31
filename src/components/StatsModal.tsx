@@ -27,13 +27,14 @@ export default () => {
 			</Link>
 			<Modal size="md" isOpen={isOpen} onClose={onClose}>
 				<ModalContent>
-					{(onClose) => (
+					{() => (
 						<>
 							<ModalHeader className="flex flex-col gap-1">
 								Since the start of the year
 							</ModalHeader>
 							<ModalBody>
 								<div className="grid grid-rows-3 grid-flow-col gap-2">
+									{/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
 									{Object.entries(stats).map(([key, stat], index) => (
 										<Tooltip
 											delay={500}

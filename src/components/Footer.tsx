@@ -1,5 +1,4 @@
 import stats from '@data/stats';
-import { Button, Link } from '@nextui-org/react';
 import * as emoji from 'node-emoji';
 import CatModal from './CatModal';
 import StatsModal from './StatsModal';
