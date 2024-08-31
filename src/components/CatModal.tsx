@@ -39,8 +39,8 @@ export default (props: Props) => {
 							<ModalBody>
 								<Image
 									isBlurred
-									height={1024}
-									width={768}
+									height="1024"
+									width="768"
 									alt={props.cat.charAt(0).toUpperCase() + props.cat.slice(1)}
 									src={`/images/${props.cat}.jpeg`}
 								/>
