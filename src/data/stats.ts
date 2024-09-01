@@ -50,7 +50,7 @@ const musicListened: Stat = {
 	hidden: false,
 	unit: 'mins',
 	suffix: '+',
-	perDay: 160,
+	perDay: 130,
 };
 
 const numberOfWorkouts: Stat = {
