@@ -27,7 +27,13 @@ export default () => {
 		>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 				{projects.map((project, index) => (
-					<Card isHoverable key={`${project.label}-${index}`}>
+					<Card
+						isHoverable
+						key={`${project.label}-${index}`}
+						classNames={{
+							base: `${project.highlight ? 'ring-2 ring-inset ring-primary shadow-lg shadow-primary/30' : ''}`,
+						}}
+					>
 						<CardHeader className="p-4">
 							<div className="flex justify-between items-center w-full">
 								<div>
