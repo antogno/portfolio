@@ -12,7 +12,6 @@ export default () => {
 	return (
 		<Navbar className="container mx-auto max-w-6xl" maxWidth="full">
 			<NavbarContent as="div" justify="start">
-				<ThemeSwitcher />
 				{links.map((link, index) => (
 					<NavbarItem key={`${link.label}-${index}`}>
 						<Link color="foreground" href={link.url}>
@@ -29,6 +28,9 @@ export default () => {
 						</Link>
 					</NavbarItem>
 				))}
+				<NavbarItem>
+					<ThemeSwitcher asLink />
+				</NavbarItem>
 			</NavbarContent>
 		</Navbar>
 	);
