@@ -10,7 +10,6 @@ type Project = {
 const projects: Project[] = [
 	{
 		label: 'Omninext',
-		url: 'https://g5x6nvsdj3.execute-api.us-east-1.amazonaws.com',
 		repoUrl: 'https://github.com/antogno/omninext',
 		description: 'Simple AWS Lambda REST API in Node.js with Serverless.',
 		stars: 0,
@@ -20,7 +19,7 @@ const projects: Project[] = [
 		label: 'PES API',
 		repoUrl: 'https://github.com/antogno/pesapi',
 		description: 'A GraphQL Pro Evolution Soccer 6 API.',
-		stars: 0,
+		stars: 1,
 		tags: ['TypeScript', 'Docker', 'GraphQL', 'API'],
 	},
 	{
