@@ -1,15 +1,12 @@
 import skills from '@data/skills';
-import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useIsVisible } from '@hooks/useIsVisible';
-import { Spacer, Tooltip } from '@nextui-org/react';
-import * as emoji from 'node-emoji';
+import { Spacer } from '@nextui-org/react';
 import { useRef, useState } from 'react';
 
-const languages = skills.filter((skill) => skill.type === 'language');
-const frameworks = skills.filter((skill) => skill.type === 'framework');
-const databases = skills.filter((skill) => skill.type === 'database');
-const tools = skills.filter((skill) => skill.type === 'tool');
+const languages = skills.filter((skill) => skill.type === 'languages');
+const frameworks = skills.filter((skill) => skill.type === 'frameworks');
+const databases = skills.filter((skill) => skill.type === 'databases');
+const tools = skills.filter((skill) => skill.type === 'tools');
 
 const skillsByType = [languages, frameworks, databases, tools];
 
@@ -32,7 +29,7 @@ export default () => {
 						skills.length > 0 && (
 							<div key={`${skills[0].type}-${index}`}>
 								<div className="capitalize text-lg font-semibold from-secondary-400 to-secondary-700 bg-clip-text text-transparent bg-gradient-to-b">
-									{skills[0].type}s
+									{skills[0].type}
 								</div>
 								<Spacer y={2} />
 								<ul>
@@ -42,15 +39,6 @@ export default () => {
 											className="flex flex-nowrap gap-1 items-center"
 										>
 											<span>{skill.label}</span>
-											{skill.extra && (
-												<Tooltip
-													delay={500}
-													placement="bottom"
-													content={emoji.emojify(skill.extra)}
-												>
-													<FontAwesomeIcon icon={faCircleQuestion} />
-												</Tooltip>
-											)}
 										</li>
 									))}
 								</ul>
