@@ -137,21 +137,21 @@ export default () => {
 											isBlurred
 											src="/images/smiling.png"
 											className="animate-levitate w-64 md:w-80"
-											alt="Smiling memoji"
+											alt="Smiling Memoji"
 											hidden={emotion !== 'smiling'}
 										/>
 										<Image
 											isBlurred
 											src="/images/angry.png"
 											className="animate-levitate w-64 md:w-80"
-											alt="Angry memoji"
+											alt="Angry Memoji"
 											hidden={emotion !== 'angry'}
 										/>
 										<Image
 											isBlurred
 											src="/images/enraged.png"
 											className="animate-levitate w-64 md:w-80"
-											alt="Enraged memoji"
+											alt="Enraged Memoji"
 											hidden={emotion !== 'enraged'}
 										/>
 									</div>
