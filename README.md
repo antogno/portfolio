@@ -5,7 +5,7 @@
 	<a href="https://github.com/antogno/portfolio/commits"><img src="https://img.shields.io/github/last-commit/antogno/portfolio" alt="Last commit"></a>
 </p>
 
-My own portfolio made with Astro, React, NextUI & Tailwind CSS in TypeScript.
+My own portfolio made with Astro, React, HeroUI & Tailwind CSS in TypeScript.
 
 This portfolio also exists thanks to [Coolors](https://coolors.co) and [Smart Swatch](https://smart-swatch.netlify.app).
 

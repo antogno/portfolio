@@ -1,6 +1,6 @@
 import skills from '@data/skills';
+import { Spacer } from '@heroui/react';
 import { useIsVisible } from '@hooks/useIsVisible';
-import { Spacer } from '@nextui-org/react';
 import { useRef, useState } from 'react';
 
 const languages = skills.filter((skill) => skill.type === 'languages');

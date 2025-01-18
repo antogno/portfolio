@@ -8,7 +8,7 @@ import {
 	ModalHeader,
 	Tooltip,
 	useDisclosure,
-} from '@nextui-org/react';
+} from '@heroui/react';
 import * as emoji from 'node-emoji';
 
 export default () => {

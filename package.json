@@ -2,7 +2,7 @@
 	"name": "portfolio",
 	"type": "module",
 	"version": "1.0.0",
-	"description": "My own portfolio made with Astro, React, NextUI & Tailwind CSS in TypeScript",
+	"description": "My own portfolio made with Astro, React, HeroUI & Tailwind CSS in TypeScript",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -16,6 +16,7 @@
 		"astro",
 		"react",
 		"nextui",
+		"heroui",
 		"tailwindcss",
 		"portfolio"
 	],
@@ -38,7 +39,7 @@
 		"@fortawesome/react-fontawesome": "^0.2.2",
 		"@nanostores/persistent": "^0.10.2",
 		"@nanostores/react": "^0.8.4",
-		"@nextui-org/react": "^2.6.11",
+		"@heroui/react": "2.6.13",
 		"@types/react": "^18.3.18",
 		"@types/react-dom": "^18.3.5",
 		"astro": "^4.16.18",

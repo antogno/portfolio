@@ -34,7 +34,7 @@ export default () => {
 						</div>
 						<div className="flex flex-col sm:w-1/2 sm:text-right gap-2">
 							<p className="text-xs w-full text-balance">
-								Made by myself with Astro, React, NextUI & Tailwind CSS in
+								Made by myself with Astro, React, HeroUI & Tailwind CSS in
 								TypeScript.
 							</p>
 							<p className="text-xs w-full text-balance">

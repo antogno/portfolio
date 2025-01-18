@@ -7,7 +7,7 @@ import {
 	ModalFooter,
 	ModalHeader,
 	useDisclosure,
-} from '@nextui-org/react';
+} from '@heroui/react';
 import * as emoji from 'node-emoji';
 
 interface Props {

@@ -8,7 +8,7 @@ import {
 	PopoverContent,
 	PopoverTrigger,
 	Spacer,
-} from '@nextui-org/react';
+} from '@heroui/react';
 import * as emoji from 'node-emoji';
 import { useEffect, useState } from 'react';
 

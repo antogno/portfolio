@@ -1,7 +1,7 @@
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button, Link } from '@heroui/react';
 import { useStore } from '@nanostores/react';
-import { Button, Link } from '@nextui-org/react';
 import { darkTheme, isThemeReady, theme, toggleTheme } from '@store/theme';
 import { useEffect, useState } from 'react';
 

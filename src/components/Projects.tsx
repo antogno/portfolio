@@ -1,7 +1,6 @@
 import projects from '@data/projects';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useIsVisible } from '@hooks/useIsVisible';
 import {
 	Card,
 	CardBody,
@@ -9,7 +8,8 @@ import {
 	CardHeader,
 	Chip,
 	Link,
-} from '@nextui-org/react';
+} from '@heroui/react';
+import { useIsVisible } from '@hooks/useIsVisible';
 import { useRef, useState } from 'react';
 
 export default () => {

@@ -1,7 +1,7 @@
 import ThemeSwitcher from '@components/ThemeSwitcher';
 import socials from '@data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
+import { Link, Navbar, NavbarContent, NavbarItem } from '@heroui/react';
 
 const links = [
 	{ label: 'Skills', url: '#skills' },
