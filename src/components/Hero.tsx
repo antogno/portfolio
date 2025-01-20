@@ -31,7 +31,7 @@ const sentences = [
 	'Enough is enough! :rage:',
 ];
 
-export default () => {
+export function Hero() {
 	const [sentenceIndex, setSentenceIndex] = useState(0);
 	const [emotion, setEmotion] = useState<'smiling' | 'angry' | 'enraged'>(
 		'smiling'
@@ -166,4 +166,4 @@ export default () => {
 			</div>
 		</div>
 	);
-};
+}

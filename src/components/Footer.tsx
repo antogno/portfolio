@@ -1,9 +1,9 @@
 import stats from '@data/stats';
 import * as emoji from 'node-emoji';
-import CatModal from './CatModal';
-import StatsModal from './StatsModal';
+import { CatModal } from './CatModal';
+import { StatsModal } from './StatsModal';
 
-export default () => {
+export function Footer() {
 	return (
 		<footer className="w-full bg-content2 dark:bg-content1 relative z-50">
 			<div className="container mx-auto p-10 max-w-6xl">
@@ -48,4 +48,4 @@ export default () => {
 			</div>
 		</footer>
 	);
-};
+}

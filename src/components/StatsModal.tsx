@@ -11,7 +11,7 @@ import {
 } from '@heroui/react';
 import * as emoji from 'node-emoji';
 
-export default () => {
+export function StatsModal() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
@@ -72,4 +72,4 @@ export default () => {
 			</Modal>
 		</>
 	);
-};
+}

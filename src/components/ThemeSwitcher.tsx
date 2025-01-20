@@ -9,7 +9,7 @@ interface Props {
 	asLink?: boolean;
 }
 
-export default (props: Props) => {
+export function ThemeSwitcher(props: Props) {
 	const $theme = useStore(theme);
 	const $isThemeReady = useStore(isThemeReady);
 	const [isMounted, setIsMounted] = useState(false);
@@ -31,4 +31,4 @@ export default (props: Props) => {
 			{icon}
 		</Button>
 	);
-};
+}

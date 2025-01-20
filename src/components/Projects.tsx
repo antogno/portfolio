@@ -12,7 +12,7 @@ import {
 import { useIsVisible } from '@hooks/useIsVisible';
 import { useRef, useState } from 'react';
 
-export default () => {
+export function Projects() {
 	const ref = useRef(null);
 	const [isVisible, setIsVisible] = useState(false);
 
@@ -85,4 +85,4 @@ export default () => {
 			</div>
 		</div>
 	);
-};
+}

@@ -10,7 +10,7 @@ const tools = skills.filter((skill) => skill.type === 'tools');
 
 const skillsByType = [languages, frameworks, databases, tools];
 
-export default () => {
+export function Skills() {
 	const ref = useRef(null);
 	const [isVisible, setIsVisible] = useState(false);
 
@@ -48,4 +48,4 @@ export default () => {
 			</div>
 		</div>
 	);
-};
+}

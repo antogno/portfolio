@@ -14,7 +14,7 @@ interface Props {
 	cat: 'axl' | 'lilli';
 }
 
-export default (props: Props) => {
+export function CatModal(props: Props) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
@@ -52,4 +52,4 @@ export default (props: Props) => {
 			</Modal>
 		</>
 	);
-};
+}

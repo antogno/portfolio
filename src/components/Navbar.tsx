@@ -1,16 +1,21 @@
-import ThemeSwitcher from '@components/ThemeSwitcher';
+import { ThemeSwitcher } from '@components/ThemeSwitcher';
 import socials from '@data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, Navbar, NavbarContent, NavbarItem } from '@heroui/react';
+import {
+	Link,
+	NavbarContent,
+	Navbar as NavbarHeroUI,
+	NavbarItem,
+} from '@heroui/react';
 
 const links = [
 	{ label: 'Skills', url: '#skills' },
 	{ label: 'Projects', url: '#projects' },
 ];
 
-export default () => {
+export function Navbar() {
 	return (
-		<Navbar className="container mx-auto max-w-6xl" maxWidth="full">
+		<NavbarHeroUI className="container mx-auto max-w-6xl" maxWidth="full">
 			<NavbarContent as="div" justify="start">
 				{links.map((link, index) => (
 					<NavbarItem key={`${link.label}-${index}`}>
@@ -32,6 +37,6 @@ export default () => {
 					<ThemeSwitcher asLink />
 				</NavbarItem>
 			</NavbarContent>
-		</Navbar>
+		</NavbarHeroUI>
 	);
-};
+}
