@@ -1,8 +1,7 @@
+import { heroui } from '@heroui/react';
+import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-const { heroui } = require('@heroui/react');
-
-/** @type {import('tailwindcss').Config} */
 export default {
 	content: [
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
@@ -19,13 +18,13 @@ export default {
 				levitate: 'levitate 3s ease-in-out infinite',
 				wave: 'wave 3s linear infinite',
 			},
-			keyframes: (theme) => ({
+			keyframes: () => ({
 				fadeIn: {
 					'0%': {
-						opacity: 0,
+						opacity: '0',
 					},
 					'100%': {
-						opacity: 1,
+						opacity: '1',
 					},
 				},
 				levitate: {
@@ -141,4 +140,4 @@ export default {
 			},
 		}),
 	],
-};
+} satisfies Config;
