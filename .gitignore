@@ -3,6 +3,7 @@
 .env
 .env.production
 .netlify
+.nvmrc
 .vercel
 dist/
 node_modules/
