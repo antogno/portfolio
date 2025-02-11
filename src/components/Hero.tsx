@@ -107,6 +107,7 @@ export function Hero() {
 							href="antonio-granaldi-cv.pdf"
 							download
 							isExternal
+							rel="nofollow"
 							color="default"
 							variant="flat"
 							endContent={<FontAwesomeIcon icon={faDownload} />}
