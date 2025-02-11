@@ -101,20 +101,6 @@ export function Hero() {
 						>
 							Contact me
 						</Button>
-						<Button
-							className="w-full md:w-auto"
-							as={Link}
-							href="antonio-granaldi-cv.pdf"
-							download
-							isExternal
-							rel="nofollow"
-							color="default"
-							variant="flat"
-							endContent={<FontAwesomeIcon icon={faDownload} />}
-							size="lg"
-						>
-							Download CV
-						</Button>
 					</div>
 				</div>
 			</div>
