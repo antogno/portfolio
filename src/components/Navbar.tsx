@@ -1,4 +1,3 @@
-import { ThemeSwitcher } from '@components/ThemeSwitcher';
 import socials from '@data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -33,9 +32,6 @@ export function Navbar() {
 						</Link>
 					</NavbarItem>
 				))}
-				<NavbarItem>
-					<ThemeSwitcher asLink />
-				</NavbarItem>
 			</NavbarContent>
 		</NavbarHeroUI>
 	);

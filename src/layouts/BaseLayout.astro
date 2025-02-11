@@ -13,7 +13,7 @@ interface Props {
 const { title, subtitle } = Astro.props;
 ---
 
-<html lang="en" class="scroll-smooth box-border">
+<html lang="en" class="dark scroll-smooth box-border">
 	<head>
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
@@ -54,7 +54,6 @@ const { title, subtitle } = Astro.props;
 	<body>
 		<div id="glow" class="pointer-events-none fixed w-full h-full z-50"></div>
 		<slot />
-		<script src="@scripts/themeInitializer.ts"></script>
 		<script src="@scripts/glow.ts"></script>
 	</body>
 </html>
