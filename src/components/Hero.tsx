@@ -71,16 +71,16 @@ export function Hero() {
 		<div className="mt-10 flex flex-col lg:flex-row items-center gap-20 pb-10 w-full">
 			<div className="text-center lg:text-left lg:w-1/2">
 				<div className="text-2xl sm:text-3xl">
-					<p className="text-4xl">
+					<h1 className="text-4xl">
 						{emotion !== 'enraged' ? 'Hello!' : 'F&$k $*#!'}
 						<span
 							className={`ml-1 inline-block ${emotion !== 'enraged' ? 'origin-[70%_70%] animate-wave' : ''}`}
 						>
 							{emoji.emojify(emotion !== 'enraged' ? ':wave:' : ':fu:')}
 						</span>
-					</p>
+					</h1>
 					<Spacer y={12} />
-					<p className="leading-snug">
+					<h2 className="leading-snug">
 						I'm{' '}
 						<span className="font-bold from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-gradient-to-r">
 							Antonio Granaldi
@@ -88,7 +88,7 @@ export function Hero() {
 						, a dedicated full-stack web developer with a knack for crafting
 						immersive digital experiences with precision and passion{' '}
 						{emoji.emojify(':rocket:')}
-					</p>
+					</h2>
 					<Spacer y={12} />
 					<div className="flex flex-row flex-wrap gap-4 justify-center items-center lg:justify-start">
 						<Button
