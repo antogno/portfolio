@@ -4,8 +4,8 @@ import { Footer } from '@components/Footer.tsx';
 import BaseLayout from './BaseLayout.astro';
 
 interface Props {
-	title: string;
-	subtitle: string;
+	title?: string;
+	subtitle?: string;
 }
 
 const { title, subtitle } = Astro.props;

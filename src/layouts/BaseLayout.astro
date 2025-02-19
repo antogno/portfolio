@@ -6,11 +6,12 @@ import '@styles/global.css';
 import { SEO } from 'astro-seo';
 
 interface Props {
-	title: string;
+	title?: string;
 	subtitle?: string;
 }
 
-const { title, subtitle } = Astro.props;
+const { title = 'Antonio Granaldi', subtitle = 'Full-Stack Web Developer' } =
+	Astro.props;
 ---
 
 <html lang="en" class="dark scroll-smooth box-border">
