@@ -27,7 +27,7 @@ export function CatModal(props: Props) {
 				underline="always"
 				onPress={() => onOpen()}
 			>
-				<span className="text-xs">{props.cat}</span>
+				<span className="text-xs cursor-pointer">{props.cat}</span>
 			</Link>
 			<Modal size="md" isOpen={isOpen} onClose={onClose}>
 				<ModalContent>

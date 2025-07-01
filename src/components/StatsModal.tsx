@@ -23,7 +23,7 @@ export function StatsModal() {
 				underline="always"
 				onPress={() => onOpen()}
 			>
-				<span className="text-xs">See all my stats!</span>
+				<span className="text-xs cursor-pointer">See all my stats!</span>
 			</Link>
 			<Modal size="md" isOpen={isOpen} onClose={onClose}>
 				<ModalContent>
@@ -47,7 +47,7 @@ export function StatsModal() {
 											>
 												<div>{emoji.emojify(stat.emoji)}</div>
 												<div
-													className={`${stat.hidden ? 'blur-sm select-none' : ''}`}
+													className={`${stat.hidden ? 'blur-xs select-none' : ''}`}
 												>
 													<span className="font-semibold">
 														{stat.prefix}

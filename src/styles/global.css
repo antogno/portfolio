@@ -1,15 +1,85 @@
-html.dark {
-	color-scheme: dark;
+@import 'tailwindcss';
+
+@plugin './hero.ts';
+
+@source '../**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.light *));
+
+@theme {
+	--font-sans:
+		'Archivo Variable', 'ui-sans-serif', 'system-ui', 'sans-serif',
+		'"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"',
+		'"Noto Color Emoji"';
+	--font-mono:
+		'Fira Code Variable', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco',
+		'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace';
+
+	--animate-fade-in: fade-in 700ms ease-in forwards;
+	--animate-levitate: levitate 3s ease-in-out infinite;
+	--animate-wave: wave 3s linear infinite;
+
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes levitate {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(1rem);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes wave {
+		0% {
+			transform: rotate(0deg);
+		}
+		10% {
+			transform: rotate(14deg);
+		}
+		20% {
+			transform: rotate(-8deg);
+		}
+		30% {
+			transform: rotate(14deg);
+		}
+		40% {
+			transform: rotate(-4deg);
+		}
+		50% {
+			transform: rotate(10deg);
+		}
+		60% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
 }
 
-html.light {
-	color-scheme: light;
-}
+@layer components {
+	#glow {
+		background: none;
 
-html.dark #glow {
-	background: radial-gradient(
-		600px at var(--glow-x) var(--glow-y),
-		rgba(235, 98, 45, 0.15),
-		transparent 80%
-	);
+		@variant dark {
+			background: radial-gradient(
+				600px at var(--glow-x) var(--glow-y),
+				rgba(235, 98, 45, 0.15),
+				transparent 80%
+			);
+		}
+	}
 }
