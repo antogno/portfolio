@@ -1,4 +1,4 @@
-import socials from '@data/socials';
+import { socials } from '@data/socials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	Link,

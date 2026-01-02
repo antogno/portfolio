@@ -1,9 +1,9 @@
-type Skill = {
+export type Skill = {
 	label: string;
 	type: 'languages' | 'frameworks' | 'databases' | 'tools';
 };
 
-const skills: Skill[] = [
+export const skills: Skill[] = [
 	{ label: 'PHP', type: 'languages' },
 	{ label: 'JavaScript', type: 'languages' },
 	{ label: 'TypeScript', type: 'languages' },
@@ -35,5 +35,3 @@ const skills: Skill[] = [
 	{ label: 'Jenkins', type: 'tools' },
 	{ label: 'Vercel', type: 'tools' },
 ];
-
-export default skills;

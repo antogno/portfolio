@@ -1,4 +1,4 @@
-type Stat = {
+export type Stat = {
 	label: string;
 	emoji: string;
 	hidden: boolean;
@@ -70,7 +70,7 @@ const timeSpentCoding: Stat = {
 	perDay: 48 / 7,
 };
 
-const stats = {
+const tmpStats = {
 	smokedCigarettes,
 	drunkCoffees,
 	moneyEarned,
@@ -81,7 +81,7 @@ const stats = {
 };
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-Object.entries(stats).forEach(([key, stat]) => {
+Object.entries(tmpStats).forEach(([key, stat]) => {
 	stat.perYear = Math.floor(stat.perDay * 365);
 
 	const currentDate = new Date();
@@ -91,7 +91,10 @@ Object.entries(stats).forEach(([key, stat]) => {
 			(1000 * 60 * 60 * 24)
 	);
 
-	stat.sinceStartOfTheYear = Math.floor(stat.perDay * daysSinceStartOfTheYear);
+	stat.sinceStartOfTheYear = Math.max(
+		1,
+		Math.floor(stat.perDay * daysSinceStartOfTheYear)
+	);
 });
 
-export default stats;
+export const stats = tmpStats;

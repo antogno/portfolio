@@ -1,4 +1,4 @@
-import skills from '@data/skills';
+import { skills } from '@data/skills';
 import { Spacer } from '@heroui/react';
 import { useIsVisible } from '@hooks/useIsVisible';
 import { useRef, useState } from 'react';

@@ -1,4 +1,4 @@
-import stats from '@data/stats';
+import { stats } from '@data/stats';
 import {
 	Link,
 	Modal,
@@ -37,6 +37,7 @@ export function StatsModal() {
 									{/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
 									{Object.entries(stats).map(([key, stat], index) => (
 										<Tooltip
+											key={`${stat.label}-${index}`}
 											delay={500}
 											placement="bottom"
 											content={stat.label}

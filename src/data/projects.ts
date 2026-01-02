@@ -1,66 +1,73 @@
-type Project = {
+export type Project = {
 	label: string;
-	url?: string;
-	repoUrl: string;
 	description: string;
-	stars: number;
 	highlight: boolean;
 	tags: string[];
+	url?: string;
+	repoUrl?: string;
+	stars?: number;
+	highlightColor?: string;
 };
 
-const projects: Project[] = [
+export const projects: Project[] = [
+	{
+		label: 'Drippie Laboratory',
+		description: "Drippie is dripping... And it's almost finished.",
+		highlight: true,
+		tags: ['???'],
+		url: 'https://drippielab.com',
+		highlightColor: '#b281fd',
+	},
 	{
 		label: 'Portfolio',
-		repoUrl: 'https://github.com/antogno/portfolio',
 		description: "You're looking at it!",
-		stars: 0,
 		highlight: true,
 		tags: ['Astro', 'React', 'Tailwind CSS'],
+		repoUrl: 'https://github.com/antogno/portfolio',
+		stars: 2,
 	},
 	{
 		label: 'Omninext',
-		repoUrl: 'https://github.com/antogno/omninext',
 		description: 'Simple AWS Lambda REST API in Node.js with Serverless.',
-		stars: 0,
 		highlight: false,
 		tags: ['TypeScript', 'Serverless', 'AWS', 'DynamoDB'],
+		repoUrl: 'https://github.com/antogno/omninext',
+		stars: 0,
 	},
 	{
 		label: 'PES API',
-		repoUrl: 'https://github.com/antogno/pesapi',
 		description: 'A GraphQL Pro Evolution Soccer 6 API.',
-		stars: 1,
 		highlight: false,
 		tags: ['TypeScript', 'Docker', 'GraphQL', 'API'],
+		repoUrl: 'https://github.com/antogno/pesapi',
+		stars: 1,
 	},
 	{
 		label: 'GitInfo',
-		url: 'https://packagist.org/packages/antogno/gitinfo',
-		repoUrl: 'https://github.com/antogno/gitinfo',
 		description:
 			'GitInfo is a tool that lets you get information about the current Git repository.',
-		stars: 0,
 		highlight: false,
 		tags: ['PHP', 'Git', 'Composer'],
+		url: 'https://packagist.org/packages/antogno/gitinfo',
+		repoUrl: 'https://github.com/antogno/gitinfo',
+		stars: 0,
 	},
 	{
 		label: 'EasyBlackjack',
-		url: 'https://pypi.org/project/easyblackjack',
-		repoUrl: 'https://github.com/antogno/easyblackjack',
 		description:
 			'EasyBlackjack is a Single-Deck Blackjack hand generator and calculator.',
-		stars: 0,
 		highlight: false,
 		tags: ['Python', 'PyPI'],
+		url: 'https://pypi.org/project/easyblackjack',
+		repoUrl: 'https://github.com/antogno/easyblackjack',
+		stars: 0,
 	},
 	{
 		label: 'Blogsonic',
-		repoUrl: 'https://github.com/antogno/blogsonic',
 		description: 'Blogsonic is a simple CRUD Web Application in PHP.',
-		stars: 1,
 		highlight: false,
 		tags: ['PHP', 'MySQL', 'CodeIgniter'],
+		repoUrl: 'https://github.com/antogno/blogsonic',
+		stars: 1,
 	},
 ];
-
-export default projects;

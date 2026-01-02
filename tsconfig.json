@@ -11,8 +11,8 @@
 			"@data/*": ["src/data/*"],
 			"@hooks/*": ["src/hooks/*"],
 			"@layouts/*": ["src/layouts/*"],
+			"@lib/*": ["src/lib/*"],
 			"@scripts/*": ["src/scripts/*"],
-			"@store/*": ["src/store/*"],
 			"@styles/*": ["src/styles/*"]
 		}
 	}

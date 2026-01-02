@@ -5,13 +5,13 @@ import {
 	faXTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
-type Social = {
+export type Social = {
 	label: string;
 	icon: IconDefinition;
 	url: string;
 };
 
-const socials: Social[] = [
+export const socials: Social[] = [
 	{ label: 'X', icon: faXTwitter, url: 'https://twitter.com/agranaldi' },
 	{
 		label: 'LinkedIn',
@@ -20,5 +20,3 @@ const socials: Social[] = [
 	},
 	{ label: 'GitHub', icon: faGithub, url: 'https://github.com/antogno' },
 ];
-
-export default socials;

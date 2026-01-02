@@ -1,4 +1,4 @@
-import stats from '@data/stats';
+import { stats } from '@data/stats';
 import * as emoji from 'node-emoji';
 import { CatModal } from './CatModal';
 import { StatsModal } from './StatsModal';
