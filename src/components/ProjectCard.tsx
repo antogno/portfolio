@@ -2,7 +2,14 @@ import { TagMarquee } from '@components/TagMarquee';
 import type { Project } from '@data/projects';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Card, CardBody, CardFooter, CardHeader, Link } from '@heroui/react';
+import {
+	Card,
+	CardBody,
+	CardFooter,
+	CardHeader,
+	Image,
+	Link,
+} from '@heroui/react';
 import { hexToRgba, isValidHexColor } from '@lib/utils';
 import React from 'react';
 
@@ -36,20 +43,35 @@ export function ProjectCard(props: Props) {
 			: 'ring-2 ring-inset ring-primary shadow-lg shadow-primary/30'
 		: '';
 
-	const title = props.project.url ? (
-		<Link isExternal showAnchorIcon color="foreground" href={props.project.url}>
+	const titleContent = (
+		<div className="flex items-center gap-2">
+			{props.project.logoUrl && (
+				<Image
+					src={props.project.logoUrl}
+					alt={`${props.project.label} logo`}
+					height={32}
+					radius="none"
+					isZoomed={false}
+				/>
+			)}
 			<span className="text-lg md:text-xl font-bold">
 				{props.project.label}
 			</span>
+		</div>
+	);
+
+	const title = props.project.url ? (
+		<Link isExternal showAnchorIcon color="foreground" href={props.project.url}>
+			{titleContent}
 		</Link>
 	) : (
-		<span className="text-lg md:text-xl font-bold">{props.project.label}</span>
+		titleContent
 	);
 
 	return (
 		<Card isHoverable style={style} classNames={{ base: className }}>
 			<CardHeader className="p-4">
-				<div className="flex justify-between items-center w-full">
+				<div className="flex justify-between items-center w-full gap-2">
 					<div>{title}</div>
 					{props.project.repoUrl && (
 						<div>

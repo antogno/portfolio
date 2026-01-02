@@ -5,6 +5,7 @@ export type Project = {
 	tags: string[];
 	url?: string;
 	repoUrl?: string;
+	logoUrl?: string;
 	stars?: number;
 	highlightColor?: string;
 };
@@ -16,6 +17,7 @@ export const projects: Project[] = [
 		highlight: true,
 		tags: ['???'],
 		url: 'https://drippielab.com',
+		logoUrl: '/images/drippie.png',
 		highlightColor: '#b281fd',
 	},
 	{
