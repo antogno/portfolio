@@ -18,7 +18,7 @@ export const projects: Project[] = [
 		tags: ['???'],
 		url: 'https://drippielab.com',
 		logoUrl: '/images/drippie.png',
-		highlightColor: '#b281fd',
+		highlightColor: '#8e80fd',
 	},
 	{
 		label: 'Portfolio',
